@@ -19,5 +19,5 @@ void test_validate_my_username()
      * config file and my_username() functions are setup properly
      */
     // TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
-    TEST_ASSERT_EQUAL_MESSAGE(malloc_username_from_conf_file(), my_username(), "Username check failed");
+    TEST_ASSERT_EQUAL_STRING_MESSAGE(my_username(), malloc_username_from_conf_file(), "Username check failed");
 }
